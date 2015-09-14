@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:longClickable="true"
+        android:divider="@color/colorSecondaryText"
+        android:dividerHeight="0.3dp"
+        android:choiceMode="singleChoice"
+        android:listSelector="@drawable/selector"
+        android:background="#ffffff"/>
+            <!--<ListView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:listSelector="@drawable/selector"
+                android:background="#ffffff"
+                android:divider="@color/colorSecondaryText"
+                android:dividerHeight="0.3dp"
+                android:longClickable="true">
+            </ListView> -->
+    <com.software.shell.fab.ActionButton
+        android:id="@+id/action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        fab:image="@drawable/ic_add_white_18dp"
+        android:layout_marginBottom="16dp"
+        fab:button_color="@color/colorAccent"
+        fab:button_colorPressed="@color/colorAccentPressed"
+        />
+
+</RelativeLayout>
